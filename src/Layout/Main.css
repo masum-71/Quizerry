@@ -1,0 +1,9 @@
+.main {
+  background-image: linear-gradient(
+    rgba(247, 233, 192, 0.839),
+    rgba(146, 152, 244, 0.498),
+    rgba(233, 184, 245, 0.373)
+  );
+  width: 95%;
+  margin: auto;
+}

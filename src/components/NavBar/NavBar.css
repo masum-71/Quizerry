@@ -1,0 +1,17 @@
+.logo{
+    font-family: 'Silkscreen', cursive;
+    color: rgb(111, 106, 249);
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: aliceblue;
+}
+
+.navbar ul a{
+    text-decoration: none;
+    margin-right: 15px;
+}
