@@ -10,7 +10,11 @@ const Subjects = () => {
 
   return (
     <div>
-      <Lottie animationData={animation} loop={true}></Lottie>
+      <Lottie
+        className="w-full animation"
+        animationData={animation}
+        loop={true}
+      ></Lottie>
 
       <div className="grid shadow-lg md:grid-cols-2 lg:grid-cols-4 gap-4 mt-12">
         {quizzes.data.map((quiz) => (
