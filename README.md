@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# This project name is Quizerry!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This app is about programming languages Quiz 
 
 ## Available Scripts
 
