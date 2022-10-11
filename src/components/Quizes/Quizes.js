@@ -6,8 +6,14 @@ import "react-toastify/dist/ReactToastify.css";
 
 const Quizes = ({ question }) => {
   const notify = () => toast(`${question.correctAnswer}`);
+  
+
   const handleAnswer = (e) => {
-    console.log(e.target)
+    if(e === `${question.correctAnswer}`){
+      alert('Your answer is correct')
+    }else{
+      alert('Opss! wrong answer')
+    }
   }
 
   return (
