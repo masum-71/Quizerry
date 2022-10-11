@@ -2,19 +2,15 @@ import React from "react";
 import "./Subjects.css";
 import { useLoaderData } from "react-router-dom";
 import Subject from "../Subject/Subject";
-import Lottie from "lottie-react";
-import animation from "../../animation/71619-coding.json";
 
 const Subjects = () => {
   const quizzes = useLoaderData();
 
   return (
     <div>
-      <Lottie
-        className="w-full animation"
-        animationData={animation}
-        loop={true}
-      ></Lottie>
+      <div className="header">
+        <h1 className="text-4xl font-bold height flex items-center justify-center">Enlighten Yourself by participating Quiz </h1>
+      </div>
 
       <div className="grid shadow-lg md:grid-cols-2 lg:grid-cols-4 gap-4 mt-12">
         {quizzes.data.map((quiz) => (
