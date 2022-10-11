@@ -13,9 +13,10 @@ import {
 
 const Statistics = () => {
   const questions = useLoaderData();
-  console.log(questions.data);
+  
   return (
-    <div className="w-full m-auto">
+    <div className="md:w-1/2 md:m-auto">
+      <div className="mt-20">
       <LineChart width={500} height={300} data={questions.data}>
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="name" />
@@ -30,6 +31,7 @@ const Statistics = () => {
         />
         <Line type="monotone" dataKey="name" stroke="#82ca9d" />
       </LineChart>
+      </div>
     </div>
   );
 };

@@ -1,16 +1,29 @@
 import React from "react";
 import Options from "../Options/Options";
+import { EyeIcon } from "@heroicons/react/24/solid";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Quizes = ({ question }) => {
+  const notify = () => toast(`${question.correctAnswer}`);
+  const handleAnswer = (e) => {
+    console.log(e.target)
+  }
 
-    console.log(question)
   return (
     <div>
       <div className="mt-10 border-2 p-5">
-        <h1 className="text-2xl">{question.question}</h1>
-        <div className="grid grid-cols-2 mt-4">
+        <div className="flex items-center bg-sky-100 p-2">
+          <h1 className="text-2xl  text-center w-full">{question.question}</h1>
+          <EyeIcon onClick={notify} className="h-6 w-6 text-blue-500" />
+          <ToastContainer />
+        </div>
+        <div className="grid md:grid-cols-2 gap-4 mt-4">
           {question.options.map((option, idx) => (
-            <Options key={idx} option={option}></Options>
+            <Options key={idx} 
+            option={option} 
+            handleAnswer = {handleAnswer}
+            ></Options>
           ))}
         </div>
       </div>
