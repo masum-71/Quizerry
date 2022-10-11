@@ -7,3 +7,5 @@ This app is about programming languages Quiz
 * react-toastify
 * recharts
 * heroicons
+## Live site link
+https://quizerry.netlify.app/
