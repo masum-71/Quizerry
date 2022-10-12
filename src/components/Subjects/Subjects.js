@@ -12,7 +12,7 @@ const Subjects = () => {
         <h1 className="text-4xl font-bold height flex items-center justify-center">Enlighten Yourself by participating Quiz </h1>
       </div>
 
-      <div className="grid shadow-lg md:grid-cols-2 lg:grid-cols-4 gap-4 mt-12">
+      <div className="grid shadow-lg md:grid-cols-2 lg:grid-cols-4 gap-4 m-12">
         {quizzes.data.map((quiz) => (
           <Subject key={quiz.id} quiz={quiz}></Subject>
         ))}
